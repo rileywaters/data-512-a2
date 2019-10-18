@@ -4,7 +4,7 @@
 
 Many datasets have significant bias that can over or under estimate a parameter leading to drastic changes in the results. If an analysis is done on a heavily biased dataset, its results could not reliably be applied to the larger population. It is important to identify what potential biases could exist in your data source and how they may affect your findings.
 
-This assignment explores the concept of bias by looking into Wikipedia articles on political figues in different countries. We see how article coverage and article quality differ in the different countries and regions. It is shown that there exists significant regional bias within these articles that could affect any analysis done on Wikipedia data. The jupyter notebook hcds-a2-bias contains the step-by-step process to this discovery.
+This assignment explores the concept of bias by looking into Wikipedia articles on political figures in different countries. We see how article coverage and article quality differ in the different countries and regions. It is shown that there exists significant regional bias within these articles that could affect any analysis done on Wikipedia data. The jupyter notebook hcds-a2-bias contains the step-by-step process to this discovery.
 
 ## Data Sources
 The data sources are as follows:
@@ -35,9 +35,9 @@ Documentation for Jupyter Notebook can be found here: http://jupyter-notebook.re
 
 ## Value Descriptions
 
-wp_wpds_politicians_by_country.csv and wp_wpds_countries-no_match.csv
+wp_wpds_politicians_by_country.csv
 
-These are the final cleaned and merged datasets with the ORES predictions. The latter contains only countries that were in one dataset but not the other. The former is the dataset used in the analysis.
+This is the final cleaned and merged dataset with the ORES predictions. 
 
 | Value | Description |
 |-------|-------------|
@@ -64,6 +64,10 @@ These two files contain aggregated fields used for the analysis. The first is th
 
 ## Considerations
 Some rev ids were not found by ORES. These ids are stored in error_rev_ids.csv
+
+Some countries that did not match in the two datasets were discarded. These are stored in wp_wpds_countries-no_match.csv
+
+Some page names begin with 'Template:' in page_data.csv. These are not Wikipedia articles and are discarded.
 
 'FA' and 'GA' are conidered quality articles for this project.
 

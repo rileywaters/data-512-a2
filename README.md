@@ -8,8 +8,8 @@ This assignment explores the concept of bias by looking into Wikipedia articles 
 
 ## Data Sources
 The data sources are as follows:
-- Wikipedia articles dataset on politions by country (page_data.csv): https://figshare.com/articles/Untitled_Item/5513449
-- Population data from the Population Reference Bureau (WPDS_2018_data.csv):
+- Wikipedia articles dataset on politians by country (page_data.csv). This data was extracted using the Wikimedia API and includes the title of each politician article and the politician's sanitized country of origin, made to match the country inidcators in the other dataset: https://figshare.com/articles/Untitled_Item/5513449
+- Population data from the Population Reference Bureau (WPDS_2018_data.csv). Includes the population of each country in millions, as collected by PBR:
 https://www.prb.org/international/indicator/population/table/
 
 Both of these files are in this repository in data/source
